@@ -1,5 +1,7 @@
-.monday:hover {
-  background-color: green;
-  color: white;
-  width: 100px;
+#amount {
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+}
+#amount:hover {
+  opacity: 1;
 }
