@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js" defer></script>
   </head>
+
   <body class="mx-auto font-DM-Sans bg-[#f9ece1]">
     <div class="max-w-[350px] md:w-96 flex gap-20 items-center justify-between p-6 bg-[#ec775f] mt-20 mx-auto rounded-xl">
       <div class="text-[#f9ece1]">
@@ -22,36 +22,36 @@
     </div>
 
     <!-- main content -->
-    <main flex class="max-w-[350px] md:w-96 bg-[#fff] mt-2 mx-auto p-6 flex-col gap-6 rounded-xl">
+    <main class="max-w-[350px] md:w-96 bg-[#fff] mt-2 mx-auto p-6 flex-col gap-6 rounded-xl">
       <h1>Spending - Last 7 days</h1>
       <!-- chart data -->
       <div class="my-6 flex items-end gap-2 justify-between border-b-2 border-[#f9ece1] pb-6 cursor-pointer">
         <span>
-          <div id="amount" class="monday w-[30px] h-[50px] bg-[#ec775f] rounded"></div>
+          <div id="mon" class="w-[30px] h-[50px] bg-[#ec775f] rounded"></div>
           <p class="text-sm text-[#93867b]">Mon</p>
         </span>
         <span>
-          <div class="w-[30px] h-[80px] bg-[#ec775f] rounded"></div>
+          <div id="tue" class="w-[30px] h-[80px] bg-[#ec775f] rounded"></div>
           <p class="text-sm text-[#93867b]">Tue</p>
         </span>
         <span>
-          <div class="w-[32px] h-[120px] bg-[#ADD8E6] rounded"></div>
+          <div id="wed" class="w-[32px] h-[120px] bg-[#ADD8E6] rounded"></div>
           <p class="text-sm text-[#93867b]">Wed</p>
         </span>
         <span>
-          <div class="w-[30px] h-[90px] bg-[#ec775f] rounded"></div>
-          <p class="text-sm text-[#93867b]">Thur</p>
+          <div id="thu" class="w-[30px] h-[90px] bg-[#ec775f] rounded"></div>
+          <p class="text-sm text-[#93867b]">Thu</p>
         </span>
         <span>
-          <div class="w-[30px] h-[70px] bg-[#ec775f] rounded"></div>
+          <div id="fri" class="w-[30px] h-[70px] bg-[#ec775f] rounded"></div>
           <p class="text-sm text-[#93867b]">Fri</p>
         </span>
         <span>
-          <div class="w-[30px] h-[100px] bg-[#ec775f] rounded"></div>
+          <div id="sat" class="w-[30px] h-[100px] bg-[#ec775f] rounded"></div>
           <p class="text-sm text-[#93867b]">Sat</p>
         </span>
         <span>
-          <div class="w-[30px] h-[50px] bg-[#ec775f] rounded"></div>
+          <div id="sun" class="w-[30px] h-[50px] bg-[#ec775f] rounded"></div>
           <p class="text-sm text-[#93867b]">Sun</p>
         </span>
       </div>

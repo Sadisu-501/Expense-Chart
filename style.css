@@ -1,7 +1,0 @@
-#amount {
-  transition: opacity 0.3s ease;
-  font-size: 1rem;
-}
-#amount:hover {
-  opacity: 1;
-}
