@@ -1,6 +1,8 @@
 const monthlyTotal = document.getElementById("monthlyTotal");
 const balance = document.getElementById("balance");
 const dayIds = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const tip = document.getElementById("mon");
+const monToolTip = document.getElementById("monTooltip");
 
 async function getData() {
   try {
@@ -20,13 +22,12 @@ async function getData() {
       bar.addEventListener("mouseover", () => {
         bar.textContent = amountValue;
         bar.style.display = "flex";
-        bar.style.alignItems = "start";
+        // bar.style.alignItems = "start";
         bar.style.justifyContent = "center";
         bar.style.color = "#hsl(25, 47%, 15%)";
-        bar.style.fontSize = "9px";
+        bar.style.fontSize = "10px";
         bar.style.fontWeight = "bold";
         bar.style.paddingTop = "5px";
-        bar.style.transition = "0.3s ease";
       });
 
       bar.addEventListener("mouseout", () => {
